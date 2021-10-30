@@ -1,0 +1,280 @@
+/*Links*/
+.woocommerce a {
+  text-decoration: underline;
+}
+
+.woocommerce-message a {
+  text-decoration: underline;
+}
+
+/*Notificação de Compra ao add produto carrinho*/
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-error {
+  background: #eee;
+  border: none;
+  color: #000;
+  padding: 15px 20px;
+}
+
+/*Remover icone de adicionado com sucesso*/
+.woocommerce-message::before,
+.woocommerce-info::before,
+.woocommerce-error::before {
+  display: none;
+}
+
+/*Erro*/
+.woocommerce-error {
+  border-left: 4px solid orangered;
+}
+
+/*Sucesso*/
+.woocommerce-message,
+.woocommerce-info {
+  border-left: 4px solid olivedrab;
+}
+
+/*Campos de input - formulários*/
+.woocommerce .input-text {
+  font-size: 1.125rem !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  background: rgba(0, 0, 0, 0.08) !important;
+  padding: 10px 15px !important;
+  border-radius: 4px !important;
+}
+
+/*Correção de padding*/
+.woocommerce form .form-row {
+  padding: 3px 0px;
+}
+
+/*Botões*/
+.woocommerce button.button {
+  background-color: #000 !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  text-transform: capitalize;
+  min-height: 43px;
+}
+
+/*Carrinho*/
+
+/*Coupon space*/
+.woocommerce #coupon_code {
+  min-width: 180px;
+  margin-right: 10px;
+}
+
+/*Button Cart*/
+.woocommerce-cart a.button.alt {
+  text-transform: capitalize;
+  font-weight: 500;
+  background-color: #0066bb;
+}
+.woocommerce-cart a.button.alt:hover {
+  text-transform: capitalize;
+  font-weight: 500;
+  background-color: #1188ee;
+}
+
+/*Subtitle cart*/
+.woocommerce-cart .cart_totals h2 {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+/*Formas do background*/
+.woocommerce table.shop_table {
+  border-radius: 0px;
+}
+
+/*Checkout*/
+/*Retirar lembrete de cupom*/
+.woocommerce-form-coupon-toggle {
+  display: none;
+}
+
+/*Subtitulos Checkout*/
+.woocommerce .checkout h3 {
+  font-size: 1rem;
+  padding: 15px;
+  background: #111;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/*Correção de espaçamento e altura*/
+.woocommerce-checkout .checkout .col-2 h3#ship-to-different-address {
+  float: none !important;
+}
+
+@media (max-width) {
+  .woocommerce-checkout .checkout .col-2 h3#ship-to-different-address {
+    margin-top: 30px;
+  }
+}
+.woocommerce #order_review_heading {
+  margin-top: 30px;
+}
+
+/*Pagamento*/
+.woocommerce #payment,
+.woocommerce #payment div.payment_box {
+  background-color: rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  color: #000;
+}
+
+/*Btn de finalizar compra*/
+.woocommerce #payment #place_order {
+  float: none;
+  margin-top: 20px;
+  font-size: 1.125rem;
+  padding: 15px 30px;
+  background-color: #0066bb !important;
+}
+.woocommerce #payment #place_order:hover {
+  background-color: #1188ee !important;
+}
+
+/*Section login*/
+.woocommerce form.checkout_coupon,
+.woocommerce form.login,
+.woocommerce form.register {
+  border: none;
+  padding: 0px;
+  margin: 10px 0px;
+  max-width: 600px;
+}
+
+/*Minha conta*/
+.woocommerce-account h2 {
+  font-size: 1.25rem;
+  margin: 10px 0px;
+}
+
+.woocommerce-account.logged-in .woocommerce {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 30px;
+}
+
+@media (max-width: 800px) {
+  .woocommerce-account.logged-in .woocommerce {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+}
+
+.woocommerce-account.logged-in .woocommerce:before,
+.woocommerce-account.logged-in .woocommerce:after {
+  display: none;
+}
+
+.woocommerce-account.logged-in .woocommerce-MyAccount-navigation,
+.woocommerce-account.logged-in .woocommerce-MyAccount-content {
+  width: auto;
+  float: none;
+}
+
+/*Estilo side menu*/
+.woocommerce-MyAccount-navigation ul {
+  background-color: #111;
+}
+
+.woocommerce-MyAccount-navigation a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.woocommerce-MyAccount-navigation a:hover,
+.woocommerce-MyAccount-navigation .is-active {
+  background-color: orangered;
+}
+
+.woocommerce-MyAccount-content p {
+  margin-bottom: 1rem;
+}
+
+.woocommerce-MyAccount-content button {
+  margin-top: 15px !important;
+}
+
+.woocommerce .woocommerce-customer-details address {
+  border-width: 1px;
+  border-radius: 0px;
+}
+
+/*Pedido recebido*/
+.woocommerce-order-received h2 {
+  font-size: 1.25rem;
+  margin: 10px 0px;
+}
+
+.woocommerce-order-received .woocommerce-thankyou-order-received {
+  color: #fff;
+  background-color: #0066bb;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.woocommerce-order-received ul.order_details {
+  background-color: #eee;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.woocommerce-order-received ul.order_details li {
+  margin: 10px;
+}
+.woocommerce-order-received ul.order_details li strong {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.woocommerce-order-received ul.order_details + p {
+  margin-bottom: 30px;
+}
+
+.woocommerce-ordersotable__cell-order-actions a {
+  margin: 5px !important;
+}
+
+/*Btns boleto*/
+.woocommerce-page .woocommerce-message .button {
+  font-weight: normal;
+  color: #fff;
+  background: #0066bb;
+}
+.woocommerce-page .woocommerce-message .button:hover {
+  font-weight: normal;
+  color: #fff;
+  background: #1188ee;
+}
+
+/*Field presente*/
+#billing_presente {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  height: 28px;
+  margin: 0 0 -4px;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  font-size: 1.125rem;
+  padding-left: 8px;
+}

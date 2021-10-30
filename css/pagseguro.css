@@ -1,0 +1,9 @@
+/*Pagseguro*/
+
+.woocommerce #pagseguro-payment-form {
+  border: none;
+}
+
+.woocommerce #payment div.payment_box ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
